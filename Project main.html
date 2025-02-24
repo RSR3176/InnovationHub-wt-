@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #0073e6, #0056b3);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.hero h3 {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.hero h3:hover {
+    background: white;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.features div {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+.features h4 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.features h4 a:hover {
+    color: #ffaa00;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* Stack elements on smaller screens */
+        padding: 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <!--<header>
+        <nav> <a href="#startups">Startup Showcase</a> |
+            <a href="#mentor">Idea Submission & Incubation</a> |
+            <a href="#Grant">Funding & Grants </a>
+            <a href="#Collab">Collaboration Opportunities</a>
+            <a href="#Profile">Profile & Dashboard</a>
+    </header>-->
+    <div class="hero"><h1>Student Innovation Hub</h1>
+        <h2>Empowering Student Innovators</h2>
+        <h3>"Join the Hub"</h3>
+    </div>
+    <h2>Key Features:</h2>
+    <div class="features">
+    <div class="show_st">
+        <h4><a href="#startups">Showcase Startups</a></h4>
+        Highlight innovative startups and their groundbreaking ideas.
+    </div>
+    <div class="idea">
+        <h4><a href="#Mentor">Idea Incubation & Mentorship</a></h4>
+        Nurture ideas with expert guidance and structured mentorship.
+    </div>
+    <div class="fund">
+        <h4><a href="Grant">Funding & Grants</a></h4>
+        Access financial support to scale and grow your startup.
+    </div>
+    <div class="collab">
+        <h4><a href="#Collab">Collaboration Opportunities</a></h4>
+        Connect with industry leaders, investors, and like-minded entrepreneurs.
+    </div>
+    </div>
+</body>
+</html>
